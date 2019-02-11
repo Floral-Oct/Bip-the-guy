@@ -74,7 +74,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     
-    func showAler(title: String, message: String){
+    func showAlert(title: String, message: String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alertController.addAction(defaultAction)
@@ -99,7 +99,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         present(imagePicker, animated: true, completion: nil)
     } else {
-            showAlert
             showAlert(title:"Camera Not Available", message: "There is no camera available on this device." )
     }
         
